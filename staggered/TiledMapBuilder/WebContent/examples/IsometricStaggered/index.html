@@ -56,29 +56,26 @@
 				.createWorld( function( tiledmap ){
 				//chargment fini de la map
 		
-				
+				console.log(Crafty.map);
 				for (var k in Crafty.map.map) {
 				    // use hasOwnProperty to filter out keys from the Object.prototype
 				    if (Crafty.map.map.hasOwnProperty(k)) {
 				        for(l in  Crafty.map.map[k]){
-				    
-				        	$("#"+Crafty.map.map[k][l]._element.id).bind("click", function(e) {
-				        		//destroy on right click
-								$(this).remove();
-			});
+				    	//console.log(Crafty.map.map[k][l]);
+				        	
 				        }
 				    }
 				}
 var layers = Crafty.e("TiledMapBuilder").getLayers();
-console.log(Crafty.e("TiledMapBuilder"));
-console.log(layers);
+// console.log(Crafty.e("TiledMapBuilder"));
+// console.log(layers);
 				
 Crafty.e("2D, DOM, SpriteAnimation, Ogre, Fourway, Keyboard, Collision").attr({x:WIDTH/4, y:HEIGHT/2})					
 				.animate("walk_w", 0, 0, 2)
 			   		.animate("walk_s", 0, 1, 2)	
 			   		.animate("walk_q", 0, 3, 2)	
 			   		.animate("walk_a", 0, 2, 2)	
-			   		.collision( new Crafty.polygon([150,150],[150,150],[150,150], [150,])) 
+			   		.collision( new Crafty.polygon([150,150],[150,150],[150,150], [150,0])) 
 			   		//.multiway(SPEED, {Q: 225, W: -45, S: 45, A: 135})  	
 			   			.fourway(2)		   				
 					.bind('Moved', function(from) {					
