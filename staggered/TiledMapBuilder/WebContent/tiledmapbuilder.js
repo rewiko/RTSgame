@@ -312,10 +312,7 @@ Crafty.c("TiledMapBuilder", {
     				 layers[layer].push(0);
 				}else{    		
 							    				
-					var entity = Crafty.e( mockEntity.head +", Mouse").attr({ x:mockEntity.x, y:mockEntity.y }).bind("Click", function(e) {
-				        		//destroy on right click
-				        		this.destroy();
-			}).areaMap([0,16], [32,0],[64,16],[64,48],[32,64], [0,48]);
+					var entity = Crafty.e( mockEntity.head +", BlockMap").attr({ x:mockEntity.x, y:mockEntity.y });
 	    			if( isIsometric ){
 	    				isometric.place( entity.x, entity.y, 0, entity);	
 	    			}    			     			
