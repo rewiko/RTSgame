@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="staggered" width="12" height="24" tilewidth="64" tileheight="32">
+ <tileset firstgid="1" name="terrain_0" tilewidth="64" tileheight="64">
+  <image source="../images/terrain_0.png" trans="ffffff" width="640" height="1024"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="12" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjZmBgYEbDk7CIwfBEPHLkqCMW21PJHHx+Gwzm0TJM0NXj00+t8KYHpnZaG2nuG0gMAIANCHI=
+  </data>
+ </layer>
+</map>
